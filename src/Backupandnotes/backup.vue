@@ -258,3 +258,6 @@ nav a:first-of-type {
 </style>
 
 import HelloWorld from "./components/HelloWorld.vue";
+
+<input v-model="You did it" type="text" />
+<p>{{ You did it }}</p>
