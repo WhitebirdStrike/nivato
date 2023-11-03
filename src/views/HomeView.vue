@@ -25,6 +25,9 @@
         :title="trollCards[4].title"
         :description="trollCards[4].description"
       />
+
+      <Modal :showTroll="showTroll" @closeTroll="showTroll = !showTroll" />
+      <button class="Trolldescription">{{ Trollinfo }}</button>
     </section>
     <!-- <section v-for="troll in trollCards" :key="troll.id" >
       <TrollCard :title="troll.title" :description="troll.description" />
@@ -38,10 +41,9 @@
 imports
 */
 
-import { ref } from "vue";
+import { ref, defineProps, defineEmits } from "vue";
 import TrollCard from "@/components/cards/card.vue";
 import CardModal from "@/components/dialogs/myDialog.vue";
-
 const trollCards = ref([
   {
     title: "Troll 1",
@@ -72,8 +74,10 @@ const trollCards = ref([
 /*
 counter
 */
-
 const count = ref(0);
+
+const { showTroll } = defineProps(["showTroll"]);
+const { closeTroll } = () => {};
 </script>
 
 <style scoped>

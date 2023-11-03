@@ -17,6 +17,12 @@
         {{ parentMessage }} - {{ index }} - {{ item.message }}
         <button>{{ item.title }}></button>
       </div>
+      <button @click="toggleTroll()">Toggle Modal</button>
+
+      <div v-if="showTroll">
+        <h1>This is an epic modal</h1>
+        <p>{{ title }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -31,11 +37,32 @@ const TrollArray = ref([
   { title: "knapp 3" },
 ]);
 
+const infotroll = ref("Trolldescription");
+const Trollinfo = ref("is good");
+
 // Accept data from parent through props
 const props = defineProps({
   title: String,
   description: String,
 });
+
+const showTroll = ref(false);
+
+const toggleTroll = () => {
+  if (showTroll.value == false) {
+    showTroll.value = true;
+  } else {
+    showTroll.value = false;
+  }
+};
+
+const openTroll = () => {
+  showTroll.value = true;
+};
+
+const closeTroll = () => {
+  showTroll.value = false;
+};
 </script>
 <style scoped>
 .trollcard {
