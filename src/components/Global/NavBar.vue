@@ -2,6 +2,7 @@
   <header>
     <div class="wrapper">
       <nav>
+        <img src="@/images/Logo.jpg" alt="logoimage" width="25%" />
         <RouterLink class="navBar" to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
