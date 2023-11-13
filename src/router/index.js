@@ -17,7 +17,7 @@ const router = createRouter({
       component: Profil,
     },
     {
-      path: "/Resources",
+      path: "/resources",
       name: "Resource",
       component: ResourceView,
     },
