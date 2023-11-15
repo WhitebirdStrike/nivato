@@ -26,7 +26,7 @@
         :description="trollCards[4].description"
       />
 
-      <Modal :showTroll="showTroll" @closeTroll="showTroll = !showTroll" />
+      <!-- </Modal :showTroll="showTroll" @closeTroll="showTroll = !showTroll" /> -->
       <button class="Trolldescription">{{ Trollinfo }}</button>
     </section>
     <!-- <section v-for="troll in trollCards" :key="troll.id" >
@@ -78,6 +78,7 @@ const count = ref(0);
 
 const { showTroll } = defineProps(["showTroll"]);
 const { closeTroll } = () => {};
+const Trollinfo = ref("");
 </script>
 
 <style scoped>

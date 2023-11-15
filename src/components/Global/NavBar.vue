@@ -7,7 +7,9 @@
         </RouterLink>
         <RouterLink class="navBarAbout" to="/about">About</RouterLink>
         <RouterLink class="navBarProfil" to="/profil">Profil</RouterLink>
-        <RouterLink to="/resources">Resources</RouterLink>
+        <RouterLink class="navBarResources" to="/resources"
+          >Resources</RouterLink
+        >
         <Modaloflogin />
       </nav>
     </div>
@@ -41,6 +43,10 @@ import Modaloflogin from "@/components/Global/Modaloflogin.vue";
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+
+.navBarResources {
+  margin: 10px;
 }
 
 .loginModal {
