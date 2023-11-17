@@ -16,9 +16,7 @@
   </header>
 </template>
 <script setup>
-import { ref } from "vue";
 import { RouterLink } from "vue-router";
-import LoginModal from "@/components/Global/LoginModal.vue";
 import Modaloflogin from "@/components/Global/Modaloflogin.vue";
 </script>
 

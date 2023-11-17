@@ -261,3 +261,9 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <input v-model="You did it" type="text" />
 <p>{{ You did it }}</p>
+
+const Trollinfo = ref("");
+<button class="Trolldescription">{{ Trollinfo }}</button>
+import LoginModal from "@/components/Global/LoginModal.vue"; const infotroll =
+ref("Trolldescription"); const Trollinfo = ref("is good"); defineEmits const {
+closeTroll } = () => {}; import { RouterLink, RouterView } from "vue-router";

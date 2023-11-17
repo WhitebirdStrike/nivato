@@ -59,7 +59,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 // Display modal based on State
 const showModal = ref(false);
 // Display Login or Registration window based on boolean

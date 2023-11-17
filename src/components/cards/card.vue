@@ -37,9 +37,6 @@ const TrollArray = ref([
   { title: "knapp 3" },
 ]);
 
-const infotroll = ref("Trolldescription");
-const Trollinfo = ref("is good");
-
 // Accept data from parent through props
 const props = defineProps({
   title: String,

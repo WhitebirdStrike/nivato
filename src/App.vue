@@ -2,14 +2,14 @@
   <div class="bodyOfApp">
     <NavBar />
     <RouterView />
-  </div>
-  <div class="footerOfApp">
-    <Footer></Footer>
+    <div class="footerOfApp">
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterView } from "vue-router";
 import NavBar from "@/components/Global/NavBar.vue";
 import Footer from "@/components/Global/Footer.vue";
 </script>
